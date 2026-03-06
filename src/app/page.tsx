@@ -1,4 +1,4 @@
-import CheckoutButton from "@/components/checkout-button";
+﻿import CheckoutButton from "@/components/checkout-button";
 import StickyCTA from "@/components/sticky-cta";
 import { getStripePublishableKey, validateStripeEnv } from "@/lib/env";
 import { faqs, features, plans, testimonials, trustSignals } from "@/lib/site-data";
@@ -14,7 +14,7 @@ export default function Home() {
       <div className="absolute bottom-20 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-signal/20 blur-[120px]" />
 
       <header className="relative mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-6 md:px-8">
-        <div className="font-display text-xl font-semibold tracking-tight">dClaude</div>
+        <div className="font-display text-xl font-semibold tracking-tight">dClaude TradePilot</div>
         <a
           href="#pricing"
           className="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10"
@@ -27,19 +27,19 @@ export default function Home() {
         <div className="grid items-center gap-10 md:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-7">
             <span className="reveal inline-flex items-center rounded-full border border-signal/40 bg-signal/10 px-4 py-2 text-xs uppercase tracking-[0.22em] text-signal">
-              Precision Trading Automation
+              Multi-Asset Trading Bot | Crypto • Forex • Nasdaq
             </span>
             <h1 className="reveal reveal-delay-1 font-display text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl">
               Scale your edge with a bot built for disciplined execution.
             </h1>
             <p className="reveal reveal-delay-2 max-w-xl text-base text-sand/80 sm:text-lg">
-              dClaude combines adaptive strategy logic, portfolio-level risk controls, and low-latency order routing
+              dClaude TradePilot combines adaptive strategy logic, portfolio-level risk controls, and low-latency routing across Crypto, Forex, Nasdaq, and indices
               so you can trade with structure instead of emotion.
             </p>
 
             <div className="reveal reveal-delay-3 flex flex-col gap-3 sm:flex-row">
               <CheckoutButton
-                label={stripeClientReady ? "Launch dClaude with Stripe" : "Set Stripe Keys to Enable Checkout"}
+                label={stripeClientReady ? "Launch dClaude TradePilot Markets with Stripe" : "Set Stripe Keys to Enable Checkout"}
                 planId="pro"
                 stripePublishableKey={stripePublishableKey}
                 disabled={!stripeClientReady}
@@ -150,7 +150,7 @@ export default function Home() {
                 Targeting 10% monthly through systematic risk-managed execution.
               </h2>
               <p className="mt-4 max-w-xl text-sm text-sand/80 sm:text-base">
-                dClaude runs strategy stacks that prioritize risk-adjusted outcomes. Performance targets guide
+                dClaude TradePilot runs strategy stacks that prioritize risk-adjusted outcomes. Performance targets guide
                 portfolio configuration and are reviewed against drawdown tolerance every cycle.
               </p>
               <p className="mt-4 rounded-xl border border-rose/35 bg-rose/10 px-4 py-3 text-xs text-rose-100/90">
@@ -212,7 +212,7 @@ export default function Home() {
               <p className="mt-4 font-display text-4xl text-white">{plan.price}</p>
               <ul className="mt-5 space-y-2 text-sm text-sand/80">
                 {plan.bullets.map((bullet) => (
-                  <li key={bullet}>• {bullet}</li>
+                  <li key={bullet}>â€¢ {bullet}</li>
                 ))}
               </ul>
               <CheckoutButton
@@ -250,7 +250,7 @@ export default function Home() {
 
       <footer className="mx-auto max-w-7xl border-t border-white/10 px-5 py-10 md:px-8">
         <div className="flex flex-col gap-3 text-sm text-sand/70 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} dClaude. Built for disciplined automation.</p>
+          <p>Â© {new Date().getFullYear()} dClaude TradePilot. Built for disciplined multi-asset automation.</p>
           <p className="max-w-2xl">
             Disclaimer: This website is for informational purposes only and does not constitute financial advice.
             Returns, including 10% monthly targets, are not guaranteed. Trading involves risk, including loss of
@@ -263,3 +263,7 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+

@@ -1,4 +1,4 @@
-export type Feature = {
+﻿export type Feature = {
   title: string;
   body: string;
   kicker: string;
@@ -16,7 +16,7 @@ export type Plan = {
 export const trustSignals = [
   {
     title: "Non-custodial architecture",
-    body: "Your capital stays at your exchange. dClaude only executes approved strategies via API permissions."
+    body: "Your capital stays at your exchange. dClaude TradePilot only executes approved strategies via API permissions."
   },
   {
     title: "Encrypted API credentials",
@@ -88,14 +88,14 @@ export const testimonials = [
 
 export const faqs = [
   {
-    question: "Is dClaude beginner-friendly?",
+    question: "Is dClaude TradePilot beginner-friendly?",
     answer:
       "Yes. The onboarding flow includes presets, risk templates, and guided setup. Advanced users can customize every strategy parameter."
   },
   {
     question: "Do you guarantee returns?",
     answer:
-      "No. Markets are volatile and losses can occur. dClaude is built to improve consistency through risk controls, not to guarantee profits."
+      "No. Markets are volatile and losses can occur. dClaude TradePilot is built to improve consistency through risk controls, not to guarantee profits."
   },
   {
     question: "What exchanges are supported?",
@@ -155,3 +155,6 @@ export const plans: Plan[] = [
     ]
   }
 ];
+
+
+

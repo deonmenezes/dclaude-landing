@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+﻿import { NextRequest, NextResponse } from "next/server";
 import { getStripeClient } from "@/lib/stripe";
 import { validateStripeEnv } from "@/lib/env";
 
@@ -6,17 +6,17 @@ type PlanId = "starter" | "pro" | "elite";
 
 const planPricing: Record<PlanId, { name: string; amount: number; description: string }> = {
   starter: {
-    name: "dClaude Starter",
+    name: "dClaude TradePilot Starter",
     amount: 9900,
     description: "Starter subscription for disciplined solo traders."
   },
   pro: {
-    name: "dClaude Pro",
+    name: "dClaude TradePilot Pro",
     amount: 19900,
     description: "Pro subscription with portfolio-level risk controls."
   },
   elite: {
-    name: "dClaude Elite",
+    name: "dClaude TradePilot Elite",
     amount: 39900,
     description: "Elite subscription for teams and high-volume operators."
   }
@@ -79,3 +79,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }
+
+
+

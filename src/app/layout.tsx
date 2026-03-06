@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
@@ -15,9 +15,9 @@ const displayFont = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "dClaude | Trading Bot Automation",
+  title: "dClaude TradePilot | Multi-Asset Trading Bot",
   description:
-    "dClaude is a premium automated trading system with disciplined risk controls and conversion-focused onboarding."
+    "dClaude TradePilot is a premium multi-asset trading bot for Crypto, Forex, Nasdaq, and global indices with disciplined risk controls."
 };
 
 export default function RootLayout({
@@ -31,3 +31,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+

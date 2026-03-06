@@ -1,6 +1,6 @@
-# dClaude Landing
+﻿# dClaude TradePilot Landing
 
-Premium conversion-focused landing page for the dClaude trading bot, built with Next.js, Tailwind CSS, and TypeScript.
+Premium conversion-focused landing page for the dClaude TradePilot multi-asset trading bot, built with Next.js, Tailwind CSS, and TypeScript.
 
 ## Features
 
@@ -48,3 +48,6 @@ stripe listen --forward-to localhost:3000/api/stripe/webhook
 ```
 
 Then trigger events with Stripe CLI.
+
+
+

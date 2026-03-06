@@ -1,4 +1,4 @@
-import CheckoutButton from "@/components/checkout-button";
+﻿import CheckoutButton from "@/components/checkout-button";
 
 type StickyCTAProps = {
   stripePublishableKey: string;
@@ -10,7 +10,7 @@ export default function StickyCTA({ stripePublishableKey, stripeEnabled }: Stick
     <div className="fixed inset-x-3 bottom-3 z-50 md:inset-x-auto md:bottom-6 md:right-6">
       <div className="mx-auto flex max-w-md items-center gap-3 rounded-2xl border border-white/20 bg-ink/85 p-3 shadow-glow backdrop-blur-xl md:max-w-none">
         <div className="min-w-0 flex-1">
-          <p className="text-xs uppercase tracking-[0.22em] text-sand/65">Launch dClaude</p>
+          <p className="text-xs uppercase tracking-[0.22em] text-sand/65">Launch dClaude TradePilot</p>
           <p className="truncate text-sm font-semibold text-white">Automate your strategy stack</p>
         </div>
         <CheckoutButton
@@ -24,3 +24,6 @@ export default function StickyCTA({ stripePublishableKey, stripeEnabled }: Stick
     </div>
   );
 }
+
+
+
